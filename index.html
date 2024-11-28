@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love Ragini Gupya</title>
+    <link rel="icon" href="img2.jpeg" class="">
+
+    <meta property="og:title" content="Happy Birthday to My Love ❤️" />
+    <meta property="og:description" content="A special surprise for the most beautiful person in my life. Click to explore the love-filled page dedicated to you!" />
+    <meta property="og:image" content="img2.jpeg" />
+    <meta property="og:url" content="https://example.com/birthday-page" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Meta Tags (Optional) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Happy Birthday to My Love ❤️" />
+    <meta name="twitter:description" content="A special surprise for the most beautiful person in my life. Click to explore the love-filled page dedicated to you!" />
+    <meta name="twitter:image" content="img2.jpeg" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+            min-height: 100vh;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .float {
+            animation: float 3s infinite ease-in-out;
+        }
+
+        .hidden-surprise {
+            display: none;
+        }
+
+        .visible-surprise {
+            display: block;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center">
+    <div class="text-center max-w-3xl w-full bg-white rounded-lg shadow-lg p-6 md:p-12">
+        <!-- Header -->
+        <h1 class="text-4xl md:text-5xl font-bold text-pink-600 mb-4">Happy Birthday, My Love! 🎉❤️</h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-8">
+            To my dearest wife, <span class="font-semibold text-pink-500">RAGINI  💖</span>, 
+            you are the most beautiful part of my life. Today, we celebrate *you*! 💖
+        </p>
+
+        <!-- Wife's Images -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <img src="img1.jpeg" alt="Happy Memory 1" class="w-full h-60 rounded-lg shadow-md object-cover">
+            <img src="img2.jpeg" alt="Happy Memory 2" class="w-full h-60 rounded-lg shadow-md object-cover ">
+            <img src="img3.jpeg" alt="Happy Memory 3" class="w-full h-60 rounded-lg shadow-md object-cover">
+        </div>
+
+        <!-- Surprise Button -->
+        <button id="surprise-btn" class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white text-lg md:text-xl font-bold py-3 px-6 rounded-full shadow-lg hover:opacity-90 transition duration-300">
+            🎁 Click Here for a Surprise! 🎂
+        </button>
+
+        <!-- Surprise Section -->
+        <div id="surprise-message" class="hidden-surprise mt-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-pink-600 mb-4 animate-bounce">🎉 Surprise! 🎉</h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-6">
+                My love, you are my sunshine, my happiness, and my everything. 
+                Today and forever, I promise to cherish and celebrate you. 
+                Here's to many more birthdays filled with love, joy, and laughter! ❤️
+            </p>
+            <div class="text-red-500 text-6xl">
+                <i class="fas fa-heart animate-pulse"></i>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-8 text-gray-500">
+            <p class="text-sm">Made with ❤️ by SANGAM GUPTA</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for showing the surprise message
+        const surpriseBtn = document.getElementById('surprise-btn');
+        const surpriseMessage = document.getElementById('surprise-message');
+
+        surpriseBtn.addEventListener('click', () => {
+            surpriseMessage.classList.remove('hidden-surprise');
+            surpriseMessage.classList.add('visible-surprise');
+        });
+    </script>
+</body>
+</html>
